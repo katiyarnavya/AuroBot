@@ -112,7 +112,7 @@ const MessageInput = ({ onSend }) => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               onKeyPress={handleKeyPress}
-              placeholder="Type a message... Use @ to mention users"
+              placeholder="Type a message..."
               inputRef={textFieldRef}
               helperText={`${message.length}/${characterLimit}`}
               error={message.length > characterLimit}
